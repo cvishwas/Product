@@ -1,0 +1,137 @@
+1)
+
+Task 
+Given an integer, , perform the following conditional actions:
+
+If  is odd, print Weird
+If  is even and in the inclusive range of  to , print Not Weird
+If  is even and in the inclusive range of  to , print Weird
+If  is even and greater than , print Not Weird
+Complete the stub code provided in your editor to print whether or not  is weird.
+
+2)
+In this challenge, you must read an integer, a double, and a String from stdin, then print the values according to the instructions in the Output Format section below. To make the problem a little easier, a portion of the code is provided for you in the editor.
+
+Note: We recommend completing Java Stdin and Stdout I before attempting this challenge.
+
+Input Format
+
+There are three lines of input:
+
+The first line contains an integer.
+The second line contains a double.
+The third line contains a String.
+Output Format
+
+There are three lines of output:
+
+On the first line, print String: followed by the unaltered String read from stdin.
+On the second line, print Double: followed by the unaltered double read from stdin.
+On the third line, print Int: followed by the unaltered integer read from stdin.
+
+Sample Input
+
+42
+3.1415
+Welcome to Java tutorials!
+Sample Output
+
+String: Welcome to Java tutorials!
+Double: 3.1415
+Int: 42
+
+3)
+Task 
+Given an integer, , print its first  multiples. Each multiple  (where ) should be printed on a new line in the form: N x i = result.
+
+Input Format
+
+A single integer, .
+
+Constraints
+
+Output Format
+
+Print  lines of output; each line  (where ) contains the  of  in the form: 
+N x i = result.
+
+Sample Input
+
+2
+Sample Output
+
+2 x 1 = 2
+2 x 2 = 4
+2 x 3 = 6
+2 x 4 = 8
+2 x 5 = 10
+2 x 6 = 12
+2 x 7 = 14
+2 x 8 = 16
+2 x 9 = 18
+2 x 10 = 20
+
+4)
+Refer the image file
+
+Sample Input
+
+2
+0 2 10
+5 3 5
+Sample Output
+
+2 6 14 30 62 126 254 510 1022 2046
+8 14 26 50 98
+
+5)Java has 8 primitive data types; char, boolean, byte, short, int, long, float, and double. For this exercise, we'll work with the primitives used to hold integer values (byte, short, int, and long):
+
+A byte is an 8-bit signed integer.
+A short is a 16-bit signed integer.
+An int is a 32-bit signed integer.
+A long is a 64-bit signed integer.
+Given an input integer, you must determine which primitive data types are capable of properly storing that input.
+
+Input Format
+
+The first line contains an integer,T, denoting the number of test cases. 
+Each test case, T , is comprised of a single line with an integer, n , which can be arbitrarily large or small.
+
+Output Format
+
+For each input variable n and appropriate primitive datatype, you must determine if the given primitives are capable of storing it. If yes, then print:
+
+n can be fitted in:
+* dataType
+
+if there is more than one appropriate data type, print each one on its own line and order them by size (i.e.: byte < short < int < long).
+
+If the number cannot be stored in one of the four aforementioned primitives, print the line:
+
+n can't be fitted anywhere.
+
+Sample Input
+
+5
+-150
+150000
+1500000000
+213333333333333333333333333333333333
+-100000000000000
+
+Sample Output
+
+-150 can be fitted in:
+* short
+* int
+* long
+150000 can be fitted in:
+* int
+* long
+1500000000 can be fitted in:
+* int
+* long
+213333333333333333333333333333333333 can't be fitted anywhere.
+-100000000000000 can be fitted in:
+* long
+
